@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="BCA.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-JavaScript-Templates/3.20.0/js/tmpl.min.js" integrity="sha512-yQJVqoTPFSC73MaslsQaVJ0zHku4Cby3NpQzweSYju+kduWspfF4HmJ3zAo1QGERfsoXdf45q54ph8XTjOlp8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+</head>
+<body>
+  <div class="mini">
+   
+  <div>
+    <nav>
+     
+      <img  class="logo2" src="Logo/logocollege.png">      
+      <u>
+        <li class="sear">
+        
+        <form>
+         <input type="text" name="search" placeholder="Search..">
+         </form>
+        </li>
+        <li class="division-topic" ><a class="active" href="BCA.html" ><i class="fa fa-home"></i>home</a>
+          <div class="inside-attribute">
+            <a class="#" href="gallery.html">Gallery</a>
+            <a class="#" href="About us.html">ABOUT US</a>
+          </div>
+        </li>
+  
+        <li><a class="#" href="teacher.html">faculty members</a></li>
+        <li><a class="#" href="Frappe placement.html">placements</a></li>
+        <li class="division-topic" ><a class="active" href="#" >GIF</a>
+          <div class="inside-attribute">
+            <a class="#" href="gif2-.html">Gif</a>
+            <a class="#" href="gif1.html">Gif</a>
+            <a class="#" href="gif3.html">Gif</a>
+          </div>
+        </li>
+        <li><a class="#" href="tech.html">lab technician</a></li>
+        <li><a class="#" href="Text Container.html">Syllabus</a></li>
+        
+      </u>
+      <label id="icon" >
+        <i class="fa-solid fa-bars"></i>
+      </label> 
+    </nav>
+  </div>
+
+
+  <div class="title">
+    <div class="college-name-div" >
+      <p class="college-name">SRI PARAMAKALYANI COLLEGE ALWARKURICHI - 627 412</p>
+      <img class="logo1" id="logo" src="Logo/logocollege.png" >
+    </div>
+    <div>
+      <p class="college-grade">Reaccredited with A+ grade by NAAC with CGPA 3.39 in 3rd cycle</p>
+    </div>
+    <div></div>
+    <div>
+      <p class="department-of-BCA">DEPARTMENT OF COMPUTER APPLICATION</p>
+    </div>
+  </div>
+
+  <div class="mini">
+    <video width="100%" height="100%" autoplay loop muted>
+      <source src="Drone View of our College.mp4" >
+    </video>
+  </div>
+
+  <div class="vision">
+    <p >VISION</p>
+  </div>
+
+  <div>
+    <para class="vision-para">
+      Providing Value Based, Quality Higher Education To The Rural Masses At Affordable cost. Computer vision is the field of study that aims to teach computers to interpret and understand visual information from the world, including images and videos.
+    </para>
+  </div>
+
+  <div class="motto">
+    <p >MOTTO</p>
+  </div>
+  <div>
+    <p class="motto-para">
+      Through Knowledge To Immortality
+    </p>
+  </div>
+
+  <div class="mission">
+    <p >MISSION</p>
+  </div>
+  <div>
+    <p class="mission-para">Cent Percent Character and Cent Percent Efficiency</p>
+  </div>
+  <div class="total-quick-link">
+    <div class="quick">
+      <h1>QUICL LINK</h1>
+    </div>
+    <div class="quick-link">
+      <a style="color: white;" href="">HOME</a>
+      <a style="color: white;" href="teacher.html">FACULTY MEMEBERS</a>
+      <a style="color: white;" href="Frappe placement.html">PLACEMENT</a>
+      <a style="color: white;" href="tech.html">TECHNICIANS</a>
+      <a style="color: white;" href="gif.html">GIF</a>
+      <a style="color: white;" href="gallery.html">GALLERY</a>
+      <a style="color: white;" href="About us.html">ABOUT-US</a>
+
+    </div>
+
+   
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $('#icon').click(function(){
+        $('u').toggleClass('show');
+      });
+    });
+  </script>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+</html>

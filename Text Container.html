@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Div Containers</title>
+<style>
+  /* CSS for the container */
+  .container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .container {
+    width: calc(33.33% - 40px); /* Adjust width for responsiveness */
+    max-width: 300px; /* Maximum width for large screens */
+    min-width: 200px; /* Minimum width for small screens */
+    height: 200px; /* Adjust height as needed */
+    background-color: #ffffff; /* White background */
+    border: 2px solid #000000; /* Black border */
+    padding: 20px; /* Adjust padding as needed */
+    transition: transform 0.3s ease; /* Transition effect for hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* CSS for the text inside the container */
+  .container p {
+    color: #333333; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line height */
+    font-weight: bold;
+
+  }
+
+  /* Hover effect */
+  .container:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+
+  /* Responsive adjustments */
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .container {
+      width: calc(100% - 40px); /* Adjust width for extra small screens */
+    }
+  }
+  .pdf{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    background-color: #38d138;
+    font-weight: bold;
+    
+    
+  }
+  .pdf:hover{
+    background-color: white;
+    color: #38d138;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container-wrapper">
+  <div class="container">
+    <p>First year BCA Syllabus.</p>
+    <div >
+      <a class="pdf" href="pdf/1st year.pdf">Click</a>
+    </div>
+   
+    
+  </div>
+
+  <div class="container">
+    <p>Third year BCA Syllabus.</p>
+    <div  >
+      <a class="pdf" href="pdf/2nd year.pdf">Click</a>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <p>Second year BCA Syllabus.</p>
+    <div >
+      <a class="pdf" href="pdf/3rd year.pdf">Click</a>
+    </div>
+  
+  </div>
+</div>
+
+</body>
+</html>

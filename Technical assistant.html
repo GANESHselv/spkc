@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<style>
+                body{
+                    text-align: center;
+                    text-shadow: 5cm;
+                    font-size: 23px;
+                    background-color: rgb(223, 233, 233);
+                    color: rgb(0, 0, 0);
+                    border:9px solid black;
+                    text-align:left;
+                    animation: go;
+                    animation-duration:90s ;
+                    font-weight: bold;
+                
+                }
+            
+                @keyframes go{
+                    0%{background-color: rgb(217, 240, 230)}
+                    25%{background-color: hsl(207, 47%, 89%)}
+                    50%{background-color: rgb(211, 211, 240)}
+                    100%{background-color: rgb(236, 214, 214)}
+                }
+                nav{
+                    text-align: center;
+                }
+                h1{
+                  text-align: center;
+                }
+
+</style>
+<body>
+  <h1>Department of Computer Application </h1>
+<pre>
+  <h1>FACULITY MEMBERS</h1>
+   <hr>
+   <nav><img src="1.jpeg"alt="pic.png"width="95"hight="220"></nav>
+    Name:                            Sri.S.Nambi Kumar,
+    Qualification:                   M.C.A.,Technical Assistants,
+   <hr>  
+   <nav><img src="1.jpeg"alt="pic.png"width="95"hight="220"></nav>
+    Name:                            selvi.A.Ramalaskshmi,
+    Qualification:                   B.C.A.,Technical Assistants,
+   <hr>
+</pre>   
+
+<div  class="container" id="div">
+  <h1>SAILAKANNAN</h1>
+  <h2 id="size"></h2>
+</div>
+  
+<script>
+  window.onresize = function(event) {
+  var width = document.getElementById('div').
+    clientWidth;
+  document.getElementById('size').
+    innerHTML = width;
+ }
+</script>
